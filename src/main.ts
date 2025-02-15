@@ -2,6 +2,10 @@ import './style.css'
 import typescriptLogo from './typescript.svg'
 import viteLogo from '/vite.svg'
 import { setupCounter } from './counter.ts'
+import { name, age } from './bases/01-types.ts'
+import { pokemonMap, pokemonValue, bulbasaur,pokemons } from './bases/02-object-interfaz.ts'
+import { pikachu } from './bases/03-class';
+
 
 document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
   <div>
@@ -16,7 +20,26 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
       <button id="counter" type="button"></button>
     </div>
     <p class="read-the-docs">
-      Click on the Vite and TypeScript logos to learn more
+      ${pikachu.getMoves()}  
+    </p>
+     <p class="read-the-docs">
+      Soy ${pikachu.name}, url: ${pikachu.imageUrl}
+      , metodo: ${pikachu.fight()}
+    </p>
+    <p class="read-the-docs">
+      Soy ${name} y tengo ${age} años.
+    </p>
+    <p class="read-the-docs">
+     Pokemones: ${pokemonValue.join(', ')}!!!
+    </p>
+    <p class="read-the-docs">
+      ${pokemonMap.name} es el pokemon con el key ${pokemonMap.key} 
+    </p>
+     <p class="read-the-docs">
+      con interface ${bulbasaur.name} es el pokemon con el key ${bulbasaur.key}
+    </p>
+     <p class="read-the-docs">
+      list de pokemones ${pokemons}
     </p>
   </div>
 `

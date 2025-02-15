@@ -49,3 +49,25 @@ yarn build
 
 9. ¡Listo para seguir desarrollando!
 Ahora puedes seguir desarrollando tu proyecto con TypeScript y Vite. Todo el código que escribas en la carpeta src será manejado por TypeScript, y Vite se encargará de compilar y servir tu aplicación de forma rápida.
+
+auto formatear typeScript
+npm install --save-dev --save-exact prettier
+yarn add --dev --exact prettier
+
+crea un archivo en la raiz .prettierrc en la raiz .prettierrc
+{
+  "semi": true,
+  "singleQuote": true,
+  "trailingComma": "all",
+  "printWidth": 100,
+  "tabWidth": 2
+}
+
+Abre VS Code y ve a settings.json (Ctrl + Shift + P → “Preferences: Open Settings (JSON)”) y agrega:
+agregar si no hay.
+{
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true,
+  "editor.formatOnPaste": true,
+  "editor.formatOnType": true
+}
