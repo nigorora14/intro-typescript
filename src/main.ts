@@ -5,6 +5,8 @@ import { setupCounter } from './counter.ts'
 import { name, age } from './bases/01-types.ts'
 import { pokemonMap, pokemonValue, bulbasaur,pokemons } from './bases/02-object-interfaz.ts'
 import { pikachu } from './bases/03-class';
+import { charmander } from './bases/05-decoration.ts'
+import { animales } from './bases/06-decorator-02.ts'
 
 
 document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
@@ -19,8 +21,11 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
     <div class="card">
       <button id="counter" type="button"></button>
     </div>
+     
     <p class="read-the-docs">
-      ${pikachu.getMoves()}  
+   ${animales.scream()}
+    ${charmander}
+      ${pikachu.getMoves()}
     </p>
      <p class="read-the-docs">
       Soy ${pikachu.name}, url: ${pikachu.imageUrl}

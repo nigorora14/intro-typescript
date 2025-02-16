@@ -21,7 +21,7 @@ export class Pokemon {
   }
   async getMoves(): Promise<string[]> {
     const { data } = await axios.get<PokeApiResponse>(`https://pokeapi.co/api/v2/pokemon/${this.hp}/`);
-    console.table(data.moves.map(move => move.move.name));
+   // console.table(data.moves.map(move => move.move.name));
     return data.moves.map(move => move.move.name);
     }
 } 

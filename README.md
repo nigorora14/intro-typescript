@@ -71,3 +71,8 @@ agregar si no hay.
   "editor.formatOnPaste": true,
   "editor.formatOnType": true
 }
+
+
+============================================================
+para los decoradores agregar en tsconfig dentro de compilerOptions
+"experimentalDecorators": true,
